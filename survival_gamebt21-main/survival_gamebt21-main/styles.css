@@ -1,0 +1,57 @@
+
+*,  *::befor,  *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.world {
+   overflow: hidden;
+    position: relative;
+    
+
+}
+.score{
+    position: absolute;
+    font-size: 3vmin;
+    right: 1vmin;
+    top: 1vmin;
+}
+.start_screen{
+position:absolute;
+font: size 5vmin;
+top:50%;
+left: 50%;
+font-style: oblique bold 10px arial,serif;
+transform: translate(-50%, -50%);
+}
+.hide{
+    display: none;
+}
+.ground{
+    --left:0;
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    left: calc(var(--left) * 1%);
+}
+.tata{
+    --bottom:0;
+    position: absolute;
+    left: 1%;
+    height: 20%;
+    bottom: calc(var(--bottom) * 1%);
+}
+.cactus{
+    --left:0;
+    position: absolute;
+    bottom: 0;
+    height: 30%;
+    left: calc(var(--left) * 1%);
+}

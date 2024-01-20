@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+    }
+      
+    
+    body {
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        min-height:100vh;
+        background:rgb(0, 0, 0);
+    }
+            
+  .circle{
+     
+    position: relative;
+    width: 600px;
+    height:600px;
+    right: 650px;
+    left: 450px;
+  
+}
+.circle:before
+{
+   content: "";
+   position: absolute;
+   top: 100px;
+   left: 100px;
+   right: 100px;
+   bottom:100px;
+   border:20px solid rgb(0, 0, 0);
+   border-radius:50%;
+   box-shadow: 0 0 50px #0f0;
+                inset:0 0 50px #0f0 ;
+
+   -webkit-box-reflect: below 10px  linear-gradient(transparent,transparent,#0002 );             
+animation: animate 5s linear infinite;
+} 
+.circle:after
+{
+   content: "";
+   position: absolute;
+   top: 100px;
+   left: 100px;
+   right: 100px;
+   bottom:100px;
+   border:20px solid rgb(0, 0, 0);
+   border-radius:50%;
+   box-shadow: 0 0 50px rgb(8, 55, 167);
+                inset:0 0 50px rgb(28, 46, 206) ;
+
+   -webkit-box-reflect: below 10px  linear-gradient(transparent,transparent,#0002 );             
+animation: animate 6s linear infinite;
+} 
+.circle:nth-child(2):before
+{
+
+animation-delay: -2.5s;
+
+}
+
+
+
+
+@keyframes animate {
+
+    0%{
+        box-shadow: 0 0 50px rgb(143, 142, 76);
+                inset:0 0 50px rgb(255, 230, 0) ;
+                  filter:hue-rotate(360deg)
+    }
+  20%{
+    box-shadow: 0 0 60px rgb(255, 0, 0);
+                inset:0 0 60px rgb(25, 10, 228) ;
+                  filter:hue-rotate(360deg)
+
+  }
+  
+   40%
+  {
+  box-shadow: 0 0 100px rgb(255, 0, 157);
+                inset:0 0 100px rgb(0, 255, 191) ;
+                  filter:hue-rotate(360deg)
+  }
+
+ 60%
+  {
+  box-shadow: 0 0 40px rgb(255, 0, 221);
+                inset:0 0 40px rgb(51, 255, 0) ;
+                  filter:hue-rotate(360deg)
+  }
+  80%
+  {
+  box-shadow: 0 0 80px rgb(0, 195, 255);
+                inset:0 0 80px rgb(0, 255, 200) ;
+                  filter:hue-rotate(360deg)
+  }
+
+  100%
+  {
+  box-shadow: 0 0 50px rgb(162, 0, 255);
+                inset:0 0 50px rgb(255, 0, 13) ;
+                  filter:hue-rotate(360deg)
+  }
+                }
+
+
+
+    .svg
+    {
+
+   height: 0;
+   width: 0;
+
+    }            
+   h1{
+
+   color: darkturquoise;
+   font: optional;
+   font-style: italic;
+   position: absolute;
+   right: 850px;
+   left: 700px; 
+   bottom: 300px; 
+   top: 300px;
+   font-weight: 300;
+   }     
+
+
+
+   h2{
+
+color: darkturquoise;
+font: optional;
+font-style: italic;
+position:absolute;
+right:100px;
+left:1300px; 
+bottom:200px; 
+top:300px;
+font-weight: 300;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}  
+
+
+h1:hover{
+background: crimson;
+  font-style: oblique;
+  color: rgb(104, 192, 21);
+  
+}
+h2:hover{
+
+font-style: italic;
+color: coral;
+  
+}
+
+.meg
+{
+
+position:absolute;
+bottom: 500px;
+top:800px;
+}
+  </style>
+</head>
+<body>
+    <div class ="circle"></div>
+    <h1><b>Meg.codeshere</h1>b></b></h1>
+    <div class ="circle"></div>
+    <h2><b>Meg.codeshere</b></h2>
+
+<div class="meg">
+
+<audio controls   autoplay> 
+    <source src="gana.mp3" type="audio/mpeg">
+    <source src="gana.ogg" type="audio/ogg">
+</audio>
+
+</div>
+</body>
+</html>

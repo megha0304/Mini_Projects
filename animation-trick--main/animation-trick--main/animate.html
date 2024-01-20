@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myregistration
+
+    </title>
+    <style>
+    body
+        {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+     min-height: 100vh;
+     background: #000;  
+     overflow: hidden;
+        }
+
+     .glowing{
+
+      position:relative ;
+     min-width:750px;
+      height: 750px;
+   margin: -150px;
+   transform-origin: right;
+   animation: colorChange 5s  linear infinite;
+     } 
+     .glowing:nth-child(even){
+
+     transform-origin: left;
+
+     }
+
+
+
+
+     @keyframes colorChange{
+
+  0%{
+
+      filter: hue-rotate(0deg);
+      transform: rotate(0deg);
+
+
+  }
+
+  100%{
+
+filter: hue-rotate(0deg);
+transform: rotate(0deg);
+
+
+}
+
+     }
+     .glowing span{
+
+    position: absolute;
+    top: calc(80px*var(--i));
+    left: calc(80px*var(--i));
+    bottom: calc(80px*var(--i));
+    right: calc(80px*var(--i));
+     }
+     .glowing span:before{
+   
+   content: '';
+   position: absolute;
+   top: 50%;
+    left: -8px;
+    width: 15px;
+    height:15px ;
+    background: rgb(18, 165, 67);
+    border-radius: 50%;
+     } 
+      .glowing span:nth-child(3n+1):before{
+
+    background: rgb(255, 0, 212);
+    box-shadow: 0 0 20px  rgb(116, 15, 99),
+                0 0 40px  rgb(255, 0, 242),
+                0 0 60px  rgb(255, 0, 221),
+                0 0 80px  rgb(217, 0, 255),
+                0 0 8px  rgb(255, 0, 221);
+    
+    
+    
+      }
+
+
+      .glowing span:nth-child(3n+2):before{
+
+background: rgb(253, 2, 15);
+box-shadow: 0 0 20px  rgb(253, 2, 2),
+            0 0 40px  rgba(253,2,2),
+            0 0 60px  rgba(253,2,2),
+            0 0 80px  rgba(253,2,2),
+            0 0 8px  rgba(253,2,2);
+
+
+
+  }
+
+
+  .glowing span:nth-child(3n+3):before{
+
+background: rgb(25, 174, 211);
+box-shadow: 0 0 20px  rgb(20, 207, 224),
+            0 0 40px  rgb(0, 234, 255),
+            0 0 60px  rgba(0,226,255,1),
+            0 0 80px  rgba(0,226,255,1),
+            0 0 8px  rgba(0,226,255,1);
+
+
+
+  }
+.glowing span:nth-child(3n+1)
+  {
+animation: animate 10s alternate infinite;
+ }
+ .glowing span:nth-child(3n+2)
+  {
+animation: animate 6s alternate infinite;
+ }
+ .glowing span:nth-child(3n+3)
+  {
+animation: animate 8s alternate infinite;
+ }
+@keyframes animate
+{
+
+0%{
+transform: rotate(0deg);
+
+}
+100%{
+
+
+
+    transform: rotate(360deg);
+}
+}
+
+@keyframes animate-reverse
+{
+
+0%{
+
+    transform: rotate(360deg); 
+}
+100%{
+    transform: rotate(0deg); 
+
+}
+}
+
+
+.kkk{
+
+color: rgb(236, 11, 11);
+font-family: sans-serif;
+
+color: cornsilk;
+    font-family: sans-serif;
+    position: absolute;
+    padding: 10px 10px 10px 10px;
+    margin: -200px 20px 20px 32px;
+    
+    align-content: flex-start;
+    position: top;
+}
+
+.kkk:hover{
+color: cyan;
+}
+
+.container{
+
+position: absolute;
+top: 50%;
+left:40%;
+transform: translate(-50% -50%);
+
+
+}
+
+.button{
+
+position: relative;
+text-align: center;
+width: 150px;
+padding: 40px;
+font-size: 35px;
+ color: #15f4ee;
+ font-family:cursive;
+ font-weight: 200;
+ border:5px solid #15f4ee;
+ text-transform: uppercase;
+ letter-spacing: 15px;
+ cursor: pointer;
+ border-radius: 100px;
+ transition: 1.5s;
+}
+
+
+
+.button:hover{
+
+box-shadow: 0 5px 5px 0 #15f4ee  inset, 0 5px 5px 0 #15f4ee,
+            0 5px 5px 0 #15f4ee  inset, 0 5px 5px 0 #15f4ee; 
+
+
+
+}
+    </style>  
+</head>
+<body>
+    <h1 class="kkk">Welcome to the world of techies .....</h1>
+
+
+    <div class="glowing">
+
+        <span style="--i:1;"></span> 
+        <span style="--i:2;"></span>
+         <span style="--i:3;"></span>
+    </div>
+
+
+
+    <div class="glowing">
+
+        <span style="--i:1;"></span> 
+        <span style="--i:2;"></span>
+         <span style="--i:3;"></span>
+    </div>
+
+
+
+    <div class="glowing">
+
+        <span style="--i:1;"></span> 
+        <span style="--i:2;"></span>
+         <span style="--i:3;"></span>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
